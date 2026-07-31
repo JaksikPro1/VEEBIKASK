@@ -1,0 +1,9 @@
+{
+  "name": "veebikask",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kodulehtede muugileht + hinnaparingu vorm (Vercel + Resend)",
+  "dependencies": {
+    "resend": "^4.0.0"
+  }
+}

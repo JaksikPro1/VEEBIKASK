@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://veebikask.ee/</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://veebikask.ee/pildid/too-fassaad.webp</image:loc>
+      <image:title>Fassaaditööde ettevõtte üheleheline koduleht</image:title>
+      <image:caption>Ühelehelise kodulehe näide fassaaditööde ettevõttele</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://veebikask.ee/pildid/too-elekter.webp</image:loc>
+      <image:title>Elektritööde ettevõtte üheleheline koduleht</image:title>
+      <image:caption>Ühelehelise kodulehe näide elektritööde ettevõttele</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/pakett-uheleheline.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/pakett-arileht.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/artiklid.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/artikkel-kodulehe-hind.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/artikkel-ei-ilmu-googles.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/artikkel-uks-voi-mitu-lehte.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

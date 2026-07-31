@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Ei ole vaja indekseerida vormi tagaotsa
+Disallow: /api/
+
+Sitemap: https://veebikask.ee/sitemap.xml
