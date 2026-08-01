@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" role="img" aria-label="Veebikask">
+  <rect width="64" height="64" rx="15" fill="#1B3BE0"/>
+  <path d="M26 12h12v34a6 6 0 0 1-6 6 6 6 0 0 1-6-6z" fill="#fff"/>
+  <rect x="26" y="19" width="7" height="3" rx="1.5" fill="#0C1B33"/>
+  <rect x="31" y="27" width="7" height="3" rx="1.5" fill="#0C1B33"/>
+  <rect x="26" y="35" width="6" height="3" rx="1.5" fill="#0C1B33"/>
+  <rect x="30" y="43" width="6" height="3" rx="1.5" fill="#0C1B33"/>
+  <path d="M38 22c6-1 9 2 10 6" stroke="#FFC53D" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <text x="80" y="43" font-family="Bricolage Grotesque, Archivo, Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="800" letter-spacing="-1.2" fill="#0C1B33">veebi<tspan fill="#1B3BE0">kask</tspan></text>
+</svg>

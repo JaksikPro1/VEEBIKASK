@@ -73,10 +73,14 @@
       kaivita();
     }
 
-    // kasutaja keerab ise -> automaatika ootab
+    // kasutaja keerab ise -> automaatika ootab, vihje kaob
+    function kasutajaKeris() {
+      peatatud = Date.now() + 4000;
+      if (raam) raam.classList.add('keritud');
+    }
     vp.addEventListener('scroll', joonista);
-    vp.addEventListener('wheel', function () { peatatud = Date.now() + 3000; }, { passive: true });
-    vp.addEventListener('touchstart', function () { peatatud = Date.now() + 5000; }, { passive: true });
+    vp.addEventListener('wheel', kasutajaKeris, { passive: true });
+    vp.addEventListener('touchstart', kasutajaKeris, { passive: true });
     vp.addEventListener('mouseenter', function () { peatatud = Date.now() + 1200; });
 
     joonista();

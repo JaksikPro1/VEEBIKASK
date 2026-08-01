@@ -119,6 +119,7 @@ img{max-width:100%;display:block}
 
 /* ---------- brauseriraam ---------- */
 .raam{
+  position:relative;
   background:var(--valge);border:1px solid var(--joon);border-radius:var(--r);
   overflow:hidden;box-shadow:0 30px 60px -34px rgba(12,27,51,.42);
 }
@@ -143,12 +144,14 @@ img{max-width:100%;display:block}
 .vaade.kasi{overflow-y:auto;scrollbar-width:none;cursor:ns-resize}
 .vaade.kasi::-webkit-scrollbar{display:none}
 .vihje{
-  position:absolute;left:50%;bottom:14px;transform:translateX(-50%);
+  position:absolute;left:50%;bottom:16px;transform:translateX(-50%);
   font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.09em;
   text-transform:uppercase;background:rgba(12,27,51,.87);color:#fff;
-  padding:6px 13px;border-radius:99px;pointer-events:none;transition:opacity .25s;z-index:4;
+  padding:6px 13px;border-radius:99px;pointer-events:none;transition:opacity .4s ease;
 }
+.raam.keritud .vihje{opacity:0}
 @media(hover:hover){.raam:hover .vihje{opacity:0}}
+.raam.keritud .vihje{opacity:0}
 .riba{height:2px;background:var(--joon)}
 .riba span{display:block;height:100%;width:0;background:var(--sinine);transition:width .08s linear}
 
@@ -292,7 +295,7 @@ textarea{min-height:150px;resize:vertical;line-height:1.55}
 @media(max-width:760px){.kontaktid{grid-template-columns:1fr}}
 .kontakt-kast{background:var(--valge);border:1px solid var(--joon);border-radius:var(--r);padding:26px}
 .kontakt-kast .k{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-bottom:9px}
-.kontakt-kast a{font-size:19px;font-weight:700;font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.02em}
+.kontakt-kast a{font-size:19px;font-weight:700;overflow-wrap:anywhere;font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.02em}
 
 footer{border-top:1px solid var(--joon);padding:38px 0;margin-top:60px;font-size:14.5px;color:var(--ink-2)}
 footer .kest{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
@@ -338,6 +341,26 @@ footer nav{margin-left:auto;display:flex;gap:18px}
 .keskel .vorm{text-align:left;margin-left:auto;margin-right:auto}
 
 /* ---------- mobiilimenüü ---------- */
+/* iPad püstpaigutus ja väiksemad tahvlid */
+@media(min-width:661px) and (max-width:1000px){
+  .kest{padding:0 30px}
+  .kolm{grid-template-columns:repeat(2,1fr)}
+  .kolm article:last-child:nth-child(odd){grid-column:1 / -1}
+  .kontaktid{gap:16px}
+  .kontakt-kast{padding:20px}
+  .kontakt-kast a{font-size:17px}
+  .vorm{padding:30px}
+  h1{font-size:clamp(34px,5.6vw,52px)}
+  .hero-ruut{gap:34px}
+}
+
+/* iPad rõhtpaigutus: menüü mahub, aga hoiame hingamisruumi */
+@media(min-width:1001px) and (max-width:1180px){
+  .kest{padding:0 34px}
+  .paas nav{gap:17px}
+  .paas nav a{font-size:14.5px}
+}
+
 @media(max-width:860px){
   .paas .kest{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:0;gap:14px}
   .paas nav{
