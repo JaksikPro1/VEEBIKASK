@@ -31,36 +31,54 @@
     }
   });
 
-  /* ---------- 3. portfoolio: kerimine hiire all ---------- */
+  /* ---------- 3. portfoolio: pidev aeglane kerimine ---------- */
   document.querySelectorAll('.vaade.kasi').forEach(function (vp) {
     var raam = vp.closest('.raam');
     var riba = raam ? raam.querySelector('.riba span') : null;
-    var raf = null, peatatud = 0;
+    var raf = null, peatatud = 0, tagasi = false;
+    var KIIRUS = 0.75;          // px kaadri kohta; hero on tunduvalt kiirem
 
     function joonista() {
       if (!riba) return;
       var max = vp.scrollHeight - vp.clientHeight;
       riba.style.width = (max > 0 ? (vp.scrollTop / max) * 100 : 0) + '%';
     }
+
     function samm() {
-      if (Date.now() > peatatud) {
-        var max = vp.scrollHeight - vp.clientHeight;
-        if (vp.scrollTop < max) vp.scrollTop += 0.9;
+      var max = vp.scrollHeight - vp.clientHeight;
+      if (!tagasi && Date.now() > peatatud && max > 0) {
+        if (vp.scrollTop < max - 1) {
+          vp.scrollTop += KIIRUS;
+        } else {
+          // põhja jõudnud: hetk pausi, siis sujuvalt algusesse
+          tagasi = true;
+          setTimeout(function () {
+            vp.scrollTo({ top: 0, behavior: vaikneRezhiim ? 'auto' : 'smooth' });
+            setTimeout(function () { tagasi = false; }, 900);
+          }, 1400);
+        }
       }
       raf = requestAnimationFrame(samm);
     }
 
+    function kaivita() { if (!raf && !vaikneRezhiim) raf = requestAnimationFrame(samm); }
+    function seiska() { if (raf) { cancelAnimationFrame(raf); raf = null; } }
+
+    // kerib ainult siis, kui raam on ekraanil - ei raiska akut
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (kirjed) {
+        kirjed.forEach(function (k) { k.isIntersecting ? kaivita() : seiska(); });
+      }, { threshold: 0.15 }).observe(vp);
+    } else {
+      kaivita();
+    }
+
+    // kasutaja keerab ise -> automaatika ootab
     vp.addEventListener('scroll', joonista);
-    vp.addEventListener('wheel', function () { peatatud = Date.now() + 2500; }, { passive: true });
-    vp.addEventListener('touchstart', function () { peatatud = Date.now() + 4000; }, { passive: true });
-    vp.addEventListener('mouseenter', function () {
-      if (vaikneRezhiim || raf) return;
-      raf = requestAnimationFrame(samm);
-    });
-    vp.addEventListener('mouseleave', function () {
-      if (raf) { cancelAnimationFrame(raf); raf = null; }
-      vp.scrollTo({ top: 0, behavior: vaikneRezhiim ? 'auto' : 'smooth' });
-    });
+    vp.addEventListener('wheel', function () { peatatud = Date.now() + 3000; }, { passive: true });
+    vp.addEventListener('touchstart', function () { peatatud = Date.now() + 5000; }, { passive: true });
+    vp.addEventListener('mouseenter', function () { peatatud = Date.now() + 1200; });
+
     joonista();
   });
 

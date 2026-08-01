@@ -27,6 +27,11 @@
 <meta name="twitter:description" content="Kiire ja Google'is leitav koduleht väikeettevõttele. Valmis kuni kahe nädalaga.">
 <meta name="twitter:image" content="https://veebikask.ee/pildid/jagapilt.png">
 
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="pildid/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -106,7 +111,7 @@
 
 <header class="paas">
   <div class="kest">
-    <a class="margis" href="#top">VEEBI<span>KASK</span></a>
+    <a class="margis" href="#top"><img src="pildid/logo-mark.svg" alt="" width="30" height="30">veebi<span>kask</span></a>
     <nav aria-label="Peamenüü">
       <a href="#hinnad">Hinnad</a>
       <a href="#tood">Tehtud tööd</a>
@@ -240,7 +245,7 @@
     <div class="kest">
       <p class="silt">Tehtud tööd</p>
       <h2>Kaks päris lehte, mis praegu tööd teevad.</h2>
-      <p class="juhe">Vii hiir raami kohale ja leht kerib. Mõlemad on üheleheliseks tehtud ja mõlemad on veebis üleval.</p>
+      <p class="juhe">Mõlemad kerivad ise. Kui tahad kiiremini vaadata, keri raami sees hiire või sõrmega.</p>
 
       <div class="tood">
         <article>
@@ -250,7 +255,7 @@
               <span class="aadress">Fassaaditööd · üheleheline koduleht</span>
             </div>
             <div class="vaade kasi">
-              <span class="vihje">Hiir siia – leht kerib</span>
+              <span class="vihje">Keri ise</span>
               <img src="pildid/too-fassaad.webp" alt="Fassaaditööde ettevõtte kodulehe täisvaade koos tehtud tööde fotogaleriiga" width="1200" height="4200" data-puudu="pildid/too-fassaad.webp">
             </div>
             <div class="riba"><span></span></div>
@@ -269,7 +274,7 @@
               <span class="aadress">Elektritööd · üheleheline koduleht</span>
             </div>
             <div class="vaade kasi">
-              <span class="vihje">Hiir siia – leht kerib</span>
+              <span class="vihje">Keri ise</span>
               <img src="pildid/too-elekter.webp" alt="Elektritööde ettevõtte koduleht tehnilise joonise stiilis, tööprotsessi neljaastmelise jaotusega" width="1200" height="3800" data-puudu="pildid/too-elekter.webp">
             </div>
             <div class="riba"><span></span></div>
@@ -283,6 +288,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- ============ KKK ============ -->
   <section class="sekts" id="kkk" data-toon="var(--t-e)">
@@ -312,35 +318,13 @@
           <p>Uuendamine on sagedane töö. Saada hinnapäringus olemasoleva lehe aadress ja ma ütlen, mida annab alles jätta ja mida tasub uuesti teha.</p>
         </details>
         <details>
+          <summary>Mida kodulehe tegemine täpsemalt sisaldab?</summary>
+          <p>Veebilehe tegemine käib nii: räägime läbi, mida sa teed ja kellele. Mina kirjutan struktuuri ja tekstid, kujundan lehe, panen fotod sisse ja seadistan tehnilise SEO baasi. Sina vaatad üle ja ütled, mida muuta. Seejärel läheb leht sinu domeenile üles. Domeeni ja majutuse seadistan ise.</p>
+        </details>
+        <details>
           <summary>Kas teed ka e-poodi?</summary>
           <p>Praegu keskendun tutvustavatele lehtedele. E-pood on eraldi maailm ja ma ei taha müüa asja, mida ma parimal tasemel ei tee.</p>
         </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ARTIKLID ============ -->
-  <section class="sekts" id="artiklid" data-toon="var(--t-c)">
-    <div class="kest">
-      <p class="silt">Artiklid</p>
-      <h2>Enne kui tellid, loe.</h2>
-      <p class="juhe">Kirjutan sellest, mida kliendid minult kõige rohkem küsivad.</p>
-      <div class="lood">
-        <a class="lugu" href="artikkel-kodulehe-hind.html">
-          <p class="kuup">Hinnad</p>
-          <h3>Kui palju maksab koduleht Eestis 2026. aastal?</h3>
-          <p>Eesti tegijate avalikud hinnad kõrvuti, tunnihinnad ja püsikulud.</p>
-        </a>
-        <a class="lugu" href="artikkel-ei-ilmu-googles.html">
-          <p class="kuup">Leitavus</p>
-          <h3>Miks su firma ei ilmu Google'is, kuigi koduleht on olemas?</h3>
-          <p>Seitse sagedast põhjust ja kuidas igaüht ise kontrollida.</p>
-        </a>
-        <a class="lugu" href="artikkel-uks-voi-mitu-lehte.html">
-          <p class="kuup">Struktuur</p>
-          <h3>Üheleheline või mitmeleheline koduleht?</h3>
-          <p>Võrdlustabel ja lihtne otsustusreegel väikefirmale.</p>
-        </a>
       </div>
     </div>
   </section>
@@ -412,7 +396,7 @@
 
         <div class="valjak">
           <label for="sonum">Räägi lühidalt, mida lehest ootad <span aria-hidden="true">*</span>
-            <span class="abi">Anna võimalikult palju infot: millega tegeled, kes on su kliendid, kas sul on fotod olemas. Kui sul on Facebooki leht, Instagram või vana koduleht, kleebi link siia – nii näen kohe, millega töötan, ja saan täpsema hinna öelda.</span>
+            <span class="abi">Anna võimalikult palju infot: millega tegeled, kes on su kliendid, kas sul on fotod olemas. Kui sul on Facebooki leht, Instagram või vana koduleht, kleebi link siia – nii näen kohe, millega töötan ja saan täpsema hinna öelda.</span>
           </label>
           <textarea id="sonum" name="sonum" required placeholder="Näiteks: teen katusetöid Lõuna-Eestis, kliendid on eramajaomanikud. Fotod on Facebookis: facebook.com/..."></textarea>
         </div>
@@ -453,6 +437,38 @@
           <a href="#paring">Kogu Eesti</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ ARTIKLID ============ -->
+  <section class="sekts" id="artiklid" data-toon="var(--t-c)">
+    <div class="kest">
+      <p class="silt">Artiklid</p>
+      <h2>Enne kui tellid, loe.</h2>
+      <p class="juhe">Kirjutan sellest, mida kliendid minult kõige rohkem küsivad.</p>
+      <div class="lood">
+        <a class="lugu" href="artikkel-kodulehe-hind.html">
+          <p class="kuup">Hinnad</p>
+          <h3>Kui palju maksab koduleht Eestis 2026. aastal?</h3>
+          <p>Eesti tegijate avalikud hinnad kõrvuti, tunnihinnad ja püsikulud.</p>
+        </a>
+        <a class="lugu" href="artikkel-ei-ilmu-googles.html">
+          <p class="kuup">Leitavus</p>
+          <h3>Miks su firma ei ilmu Google'is, kuigi koduleht on olemas?</h3>
+          <p>Seitse sagedast põhjust ja kuidas igaüht ise kontrollida.</p>
+        </a>
+        <a class="lugu" href="artikkel-uks-voi-mitu-lehte.html">
+          <p class="kuup">Struktuur</p>
+          <h3>Üheleheline või mitmeleheline koduleht?</h3>
+          <p>Võrdlustabel ja lihtne otsustusreegel väikefirmale.</p>
+        </a>
+        <a class="lugu" href="kellele-koduleht-tasub.html">
+          <p class="kuup">Ülevaade</p>
+          <h3>Millistele firmadele koduleht kõige rohkem ära tasub?</h3>
+          <p>Valdkondade kaupa: kus koduleht toob kliente ja kus mitte.</p>
+        </a>
+      </div>
+      <p style="margin-top:22px"><a href="artiklid.html">Kõik artiklid, sh valdkondade kaupa &rarr;</a></p>
     </div>
   </section>
 

@@ -89,8 +89,10 @@ img{max-width:100%;display:block}
 .paas .kest{display:flex;align-items:center;gap:26px;height:66px}
 .margis{
   font-family:'Bricolage Grotesque',sans-serif;font-weight:800;
-  font-size:19px;letter-spacing:-.03em;color:var(--ink);
+  font-size:20px;letter-spacing:-.035em;color:var(--ink);
+  display:flex;align-items:center;gap:9px;flex:none;
 }
+.margis img{width:30px;height:30px;border-radius:7px}
 .margis span{color:var(--sinine)}
 .paas nav{margin-left:auto;display:flex;gap:22px}
 .paas nav a{color:var(--ink-2);font-size:15px;font-weight:600}
@@ -131,8 +133,7 @@ img{max-width:100%;display:block}
 .vaade img{width:100%;height:auto}
 
 /* hero: pidev aeglane kerimine */
-.lint{animation:keri 27s linear infinite}
-.raam:hover .lint{animation-play-state:paused}
+.lint{animation:keri 22s linear infinite}
 @keyframes keri{
   0%,6%{transform:translateY(0)}
   94%,100%{transform:translateY(calc(-100% + var(--kk,430px)))}
@@ -147,7 +148,7 @@ img{max-width:100%;display:block}
   text-transform:uppercase;background:rgba(12,27,51,.87);color:#fff;
   padding:6px 13px;border-radius:99px;pointer-events:none;transition:opacity .25s;z-index:4;
 }
-.raam:hover .vihje{opacity:0}
+@media(hover:hover){.raam:hover .vihje{opacity:0}}
 .riba{height:2px;background:var(--joon)}
 .riba span{display:block;height:100%;width:0;background:var(--sinine);transition:width .08s linear}
 
@@ -366,4 +367,15 @@ footer nav{margin-left:auto;display:flex;gap:18px}
   .kkk p{padding-right:20px}
   footer .kest{flex-direction:column;align-items:flex-start;gap:14px}
   footer nav{margin-left:0}
+}
+
+/* hind pealkirja all paketilehel */
+.hind-rida{
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:800;
+  font-size:38px;letter-spacing:-.03em;color:var(--sinine);
+  margin:14px 0 0;line-height:1;
+}
+.hind-rida span{
+  font-family:'Figtree',sans-serif;font-size:15px;font-weight:600;
+  color:var(--ink-2);letter-spacing:0;
 }

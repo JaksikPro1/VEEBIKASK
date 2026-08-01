@@ -25,7 +25,7 @@ pildid/                       ekraanipildid tulevad siia
 ## 1. Asenda kohatäited
 
 Bränd **Veebikask** ja domeen **veebikask.ee** on kohatäited. Kontrolli enne kasutamist,
-kas nimi ja domeen on vabad, ja asenda kõikides failides:
+kas nimi ja domeen on vabad, ning asenda kõikides failides:
 
 ```bash
 # macOS
@@ -117,3 +117,18 @@ kui kogu ülejäänud nimekiri.
 - `replyTo` on kliendi aadress, nii et saad kirjale otse vastata
 
 Kui rämpsposti tuleb liiga palju, lisa Cloudflare Turnstile (tasuta).
+
+---
+
+## Logo ja ikoonid
+
+| Fail | Kus kasutusel |
+|---|---|
+| `pildid/logo.svg` | horisontaalne logo (märk + kiri), arvetel, sotsiaalmeedias |
+| `pildid/logo-mark.svg` | ainult märk, lehe päises |
+| `favicon.svg` / `favicon.ico` | brauseri vahekaardil |
+| `pildid/apple-touch-icon.png` | iPhone'i avaekraanil |
+| `pildid/ikoon-192.png`, `ikoon-512.png` | Androidi avaekraanil |
+
+Värvid: sinine `#1B3BE0`, tume `#0C1B33`, kollane `#FFC53D`.
+Kui tahad logo värvi muuta, ava SVG tekstiredaktoris ja asenda värvikood.
