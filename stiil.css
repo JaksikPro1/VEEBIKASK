@@ -298,8 +298,14 @@ textarea{min-height:150px;resize:vertical;line-height:1.55}
 .kontakt-kast a{font-size:19px;font-weight:700;overflow-wrap:anywhere;font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.02em}
 
 footer{border-top:1px solid var(--joon);padding:38px 0;margin-top:60px;font-size:14.5px;color:var(--ink-2)}
-footer .kest{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
-footer nav{margin-left:auto;display:flex;gap:18px}
+footer .kest{display:flex;gap:34px;flex-wrap:wrap;align-items:flex-start;justify-content:space-between}
+footer nav{display:flex;gap:16px;flex-wrap:wrap;max-width:460px}
+.jalus-info p{margin:0 0 4px;font-size:14.5px}
+.jalus-firma{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:17px;
+  letter-spacing:-.02em;color:var(--ink);margin-bottom:7px !important}
+.jalus-copy{margin-top:11px !important;font-size:13px;opacity:.75}
+.jalus-nav a{color:var(--ink-2);font-weight:600}
+.jalus-nav a:hover{color:var(--sinine)}
 
 /* ---------- artiklid ---------- */
 .lood{display:grid;gap:12px;margin-top:30px}
@@ -388,8 +394,8 @@ footer nav{margin-left:auto;display:flex;gap:18px}
   .artikkel th,.artikkel td{padding:9px 8px}
   .kkk summary{font-size:16.5px;padding-right:34px}
   .kkk p{padding-right:20px}
-  footer .kest{flex-direction:column;align-items:flex-start;gap:14px}
-  footer nav{margin-left:0}
+  footer .kest{flex-direction:column;align-items:flex-start;gap:20px}
+  footer nav{max-width:none}
 }
 
 /* hind pealkirja all paketilehel */
@@ -401,4 +407,10 @@ footer nav{margin-left:auto;display:flex;gap:18px}
 .hind-rida span{
   font-family:'Figtree',sans-serif;font-size:15px;font-weight:600;
   color:var(--ink-2);letter-spacing:0;
+}
+
+/* tärniga märkus usaldusnumbrite all */
+.taht{
+  flex-basis:100%;margin:6px 0 0;font-family:'JetBrains Mono',monospace;
+  font-size:11px;color:var(--ink-2);opacity:.8;
 }

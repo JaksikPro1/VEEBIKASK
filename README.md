@@ -45,7 +45,7 @@ Kausta `pildid/` on vaja kolme faili:
 |---|---|
 | `too-fassaad.webp` | terve lehe ekraanipilt esimesest klienditööst |
 | `too-elekter.webp` | terve lehe ekraanipilt teisest klienditööst |
-| `jagapilt.png` | 1200×630 pilt, mis ilmub Facebookis/WhatsAppis jagades |
+| ~~`jagapilt.png`~~ | JUBA OLEMAS, genereeritud |
 
 Ekraanipilt: Firefox → parem klõps lehel → *Tee ekraanipilt* → *Salvesta terve leht*.
 Seejärel [squoosh.app](https://squoosh.app) → WebP, kvaliteet ~75 → alla 400 KB.

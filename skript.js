@@ -94,6 +94,9 @@
   var vorm = document.getElementById('paringuvorm');
   if (!vorm) return;
 
+  // millal vorm ekraanile ilmus - robot täidab sekunditega
+  var avatud = Date.now();
+
   var vanaKast = document.getElementById('vanaleht');
   var vanaVali = document.getElementById('vana');
 
@@ -133,7 +136,8 @@
       pakett: fd.get('pakett'),
       lisad: fd.getAll('lisad'),
       sonum: fd.get('sonum'),
-      veebisait: fd.get('veebisait')   // meepott robotitele
+      veebisait: fd.get('veebisait'),  // meepott robotitele
+      taitmisaeg: Math.round((Date.now() - avatud) / 1000)
     };
 
     nupp.disabled = true;
@@ -147,9 +151,10 @@
       .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
       .then(function (v) {
         if (!v.ok) throw new Error(v.j && v.j.viga ? v.j.viga : 'Saatmine ebaõnnestus');
-        naita('Päring läks teele. Vastan tavaliselt sama päeva jooksul.', true);
+        naita('Päring läks teele. Suunan sind edasi...', true);
         vorm.reset();
         vanaKast.classList.add('peidus');
+        setTimeout(function () { window.location.href = 'aitah.html'; }, 700);
       })
       .catch(function (err) {
         naita('Midagi läks viltu: ' + err.message +

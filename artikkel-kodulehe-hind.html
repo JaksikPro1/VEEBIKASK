@@ -43,8 +43,8 @@
       "inLanguage":"et",
       "datePublished":"2026-07-31",
       "dateModified":"2026-07-31",
-      "author":{"@type":"Organization","name":"Veebikask","url":"https://veebikask.ee/"},
-      "publisher":{"@type":"Organization","name":"Veebikask","url":"https://veebikask.ee/"},
+      "author":{"@type":"Organization","name":"Veebikask","legalName":"Veebikask OÜ","identifier":"17567171","url":"https://veebikask.ee/"},
+      "publisher":{"@type":"Organization","name":"Veebikask","legalName":"Veebikask OÜ","identifier":"17567171","url":"https://veebikask.ee/"},
       "mainEntityOfPage":{"@type":"WebPage","@id":"https://veebikask.ee/artikkel-kodulehe-hind.html"},
       "image":"https://veebikask.ee/pildid/jagapilt.png"
     },
@@ -65,7 +65,7 @@
 
 <header class="paas">
   <div class="kest">
-    <a class="margis" href="index.html"><img src="pildid/logo-mark.svg" alt="" width="30" height="30">veebi<span>kask</span></a>
+    <a class="margis" href="index.html"><img src="pildid/logo-mark.svg" alt="" width="30" height="30">veebikask</a>
     <nav aria-label="Peamenüü">
       <a href="index.html#hinnad">Hinnad</a>
       <a href="index.html#tood">Tehtud tööd</a>
@@ -132,7 +132,7 @@
         <h2>Kust need numbrid pärinevad</h2>
         <p>Andmed pärinevad Eesti veebitegijate avalikest hinnakirjadest ja hinnaartiklitest, mis on avaldatud 2025.–2026. aastal. Tasub arvestada, et enamik neist on tegijate endi turundussisu, ehk ülemine ots on tavaliselt optimistlikum kui alumine. Kõik numbrid on käibemaksuta.</p>
 
-        <p>Loe edasi: <a href="artikkel-uks-voi-mitu-lehte.html">üheleheline või mitmeleheline koduleht – kumb väikefirmale sobib</a> ja <a href="artikkel-ei-ilmu-googles.html">miks su firma ei ilmu Google'is, kuigi koduleht on olemas</a>.</p>
+        <p>Loe edasi: <a href="artikkel-uks-voi-mitu-lehte.html">üheleheline või mitmeleheline koduleht – kumb ettevõttele sobib</a> ja <a href="artikkel-ei-ilmu-googles.html">miks su firma ei ilmu Google'is, kuigi koduleht on olemas</a>.</p>
 
         <p style="margin-top:36px"><a class="nupp" href="index.html#paring">Küsi oma projektile hinnapakkumist</a></p>
       </article>
@@ -142,15 +142,28 @@
 
 <footer>
   <div class="kest">
-    <span>© <span id="aasta">2026</span> Veebikask · Kodulehed kogu Eestis</span>
-    <nav aria-label="Jaluse menüü">
+    <div class="jalus-info">
+      <p class="jalus-firma">Veebikask OÜ</p>
+      <p>Registrikood 17567171 · Tegutseb kogu Eestis</p>
+      <p><a href="tel:+37256938020">+372 5693 8020</a> · <a href="mailto:veebikask@gmail.com">veebikask@gmail.com</a></p>
+      <p class="jalus-copy">© <span id="aasta">2026</span> Veebikask OÜ</p>
+    </div>
+    <nav aria-label="Jaluse menüü" class="jalus-nav">
       <a href="index.html#hinnad">Hinnad</a>
+      <a href="koduleht-ehitusfirmale.html">Ehitusfirmale</a>
+      <a href="koduleht-elektrikule.html">Elektrikule</a>
+      <a href="kodulehe-uuendamine.html">Uuendamine</a>
       <a href="artiklid.html">Artiklid</a>
+      <a href="privaatsus.html">Privaatsus</a>
       <a href="index.html#paring">Hinnapäring</a>
     </nav>
   </div>
 </footer>
 
 <script src="skript.js" defer></script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

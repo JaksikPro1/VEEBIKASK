@@ -43,8 +43,8 @@
       "inLanguage":"et",
       "datePublished":"2026-08-01",
       "dateModified":"2026-08-01",
-      "author":{"@type":"Organization","name":"Veebikask","url":"https://veebikask.ee/"},
-      "publisher":{"@type":"Organization","name":"Veebikask","url":"https://veebikask.ee/"},
+      "author":{"@type":"Organization","name":"Veebikask","legalName":"Veebikask OÜ","identifier":"17567171","url":"https://veebikask.ee/"},
+      "publisher":{"@type":"Organization","name":"Veebikask","legalName":"Veebikask OÜ","identifier":"17567171","url":"https://veebikask.ee/"},
       "mainEntityOfPage":{"@type":"WebPage","@id":"https://veebikask.ee/koduleht-elektrikule.html"},
       "image":"https://veebikask.ee/pildid/jagapilt.png"
     },
@@ -65,7 +65,7 @@
 
 <header class="paas">
   <div class="kest">
-    <a class="margis" href="index.html"><img src="pildid/logo-mark.svg" alt="" width="30" height="30">veebi<span>kask</span></a>
+    <a class="margis" href="index.html"><img src="pildid/logo-mark.svg" alt="" width="30" height="30">veebikask</a>
     <nav aria-label="Peamenüü">
       <a href="index.html#hinnad">Hinnad</a>
       <a href="index.html#tood">Tehtud tööd</a>
@@ -105,7 +105,7 @@
 
         <h2>Google'i ettevõtteprofiil on siin olulisem kui koduleht</h2>
         <p>Kui keegi otsib telefonis &bdquo;elektrik&ldquo; koos linnanimega, ilmub kõige üleval kaardikast kolme ettevõttega. Sinna ei saa koduleht &ndash; sinna saab ainult Google'i ettevõtteprofiil.</p>
-        <p>Profiil on tasuta ja selle seadistamine võtab tunni. Arvustused mõjutavad järjestust tugevalt, nii et küsi neid rahulolevatelt klientidelt kohe töö lõpus, kui hea tunne on veel värske. Seadistan profiili osana mitmelehelisest paketist.</p>
+        <p>Profiil on tasuta ja selle seadistamine võtab tunni. Arvustused mõjutavad järjestust tugevalt, nii et küsi neid rahulolevatelt klientidelt kohe töö lõpus, kui hea tunne on veel värske. Profiili saad ise seadistada, see on tasuta ja võtab tunni.</p>
 
         <h2>Mida see maksab</h2>
         <p>Üheleheline elektriku koduleht algab 300 eurost ja valmib maksimaalselt nädalaga. Kui tahad eraldi lehti erinevate tööliikide kohta ja Google'i profiili seadistust, on see 500 eurost.</p>
@@ -120,15 +120,28 @@
 
 <footer>
   <div class="kest">
-    <span>&copy; <span id="aasta">2026</span> Veebikask &middot; Kodulehed kogu Eestis</span>
-    <nav aria-label="Jaluse menüü">
+    <div class="jalus-info">
+      <p class="jalus-firma">Veebikask OÜ</p>
+      <p>Registrikood 17567171 &middot; Tegutseb kogu Eestis</p>
+      <p><a href="tel:+37256938020">+372 5693 8020</a> &middot; <a href="mailto:veebikask@gmail.com">veebikask@gmail.com</a></p>
+      <p class="jalus-copy">&copy; <span id="aasta">2026</span> Veebikask OÜ</p>
+    </div>
+    <nav aria-label="Jaluse menüü" class="jalus-nav">
       <a href="index.html#hinnad">Hinnad</a>
+      <a href="koduleht-ehitusfirmale.html">Ehitusfirmale</a>
+      <a href="koduleht-elektrikule.html">Elektrikule</a>
+      <a href="kodulehe-uuendamine.html">Uuendamine</a>
       <a href="artiklid.html">Artiklid</a>
+      <a href="privaatsus.html">Privaatsus</a>
       <a href="index.html#paring">Hinnapäring</a>
     </nav>
   </div>
 </footer>
 
 <script src="skript.js" defer></script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
