@@ -50,6 +50,12 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ ok: true });
   }
 
+  // Ajakontroll: inimene ei jõua vormi 4 sekundiga täita.
+  // Vastame 200-ga, et robot ei saaks aru, mille otsa ta komistas.
+  if (typeof keha.taitmisaeg === 'number' && keha.taitmisaeg < 4) {
+    return res.status(200).json({ ok: true });
+  }
+
   const nimi = puhasta(keha.nimi, 120);
   const epost = puhasta(keha.epost, 160);
   const sonum = puhasta(keha.sonum, 5000);
@@ -59,6 +65,18 @@ module.exports = async function handler(req, res) {
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(epost)) {
     return res.status(400).json({ viga: 'E-posti aadress ei ole korrektne' });
+  }
+
+  // Lihtsad rämpsposti tunnused. Vastame 200-ga, aga kirja ei saada,
+  // et robot ei saaks aru, mille otsa ta komistas.
+  const telefonKontroll = String(keha.telefon || '').replace(/[\s()-]/g, '');
+  const kahtlane =
+    /555\d{6,7}$/.test(telefonKontroll) ||
+    (sonum.match(/https?:\/\//g) || []).length >= 3 ||
+    /\b(seo services|backlinks|guest post|casino|loan offer|bitcoin)\b/i.test(sonum);
+  if (kahtlane) {
+    console.warn('Rämpspost filtreeritud:', epost);
+    return res.status(200).json({ ok: true });
   }
 
   const firma = puhasta(keha.firma, 160) || '–';
