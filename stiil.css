@@ -233,6 +233,7 @@ img{max-width:100%;display:block}
 .too-info h3{font-size:20px}
 .too-info span{font-size:14px;color:var(--ink-2)}
 .too-info a{font-size:14px;font-weight:600;margin-left:auto}
+.too-link{margin:12px 2px 0;font-size:15px;font-weight:600}
 
 /* ---------- KKK ---------- */
 .kkk{margin-top:28px;border-top:1px solid var(--joon)}
@@ -433,7 +434,7 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;max-width:460px}
 .lehed::-webkit-scrollbar-thumb{background:var(--joon);border-radius:99px}
 .lehed::-webkit-scrollbar-track{background:transparent}
 .lehed > article{flex:0 0 300px;scroll-snap-align:start}
-.lehed .raam{box-shadow:0 18px 40px -30px rgba(12,27,51,.5)}
+.lehed .raam{--kk:420px;box-shadow:0 18px 40px -30px rgba(12,27,51,.5)}
 .lehed .kroom{padding:9px 12px;gap:6px}
 .lehed .tapp{width:7px;height:7px}
 .lehed .aadress{font-size:10px;padding:4px 9px;margin-left:6px}
@@ -445,12 +446,17 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;max-width:460px}
 }
 .leht-info h3{font-size:17px}
 .leht-info p{margin:7px 0 0;font-size:14px;line-height:1.5;color:var(--ink-2)}
-@media(max-width:560px){
-  .lehed > article{flex:0 0 76vw}
+/* telefonis: lehed üksteise all, tavaline kerimine - kõrvuti riba jääb suuremale ekraanile */
+@media(max-width:700px){
+  .lehed{display:block;overflow:visible;padding-bottom:0}
+  .lehed > article{width:auto;margin-bottom:26px}
+  .lehed > article:last-child{margin-bottom:0}
+  .lehed .raam{--kk:340px}
+  .lehed-pais .kerivihje{display:none}
 }
 
-/* puuteseadmes: väikesed raamid kerivad ainult ise, et sõrmega saaks lehte kerida */
+/* puuteseadmes kerivad väikesed raamid ainult ise: sõrm keriks lehte, mitte raami sisu */
 @media(hover:none){
-  .lehed .vaade.kasi{overflow-y:hidden;cursor:default}
+  .lehed .vaade.kasi{overflow-y:hidden;cursor:default;pointer-events:none}
   .lehed .vihje{display:none}
 }
