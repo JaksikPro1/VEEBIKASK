@@ -7,8 +7,8 @@ Ei vaja ehitusprotsessi ega raamistikku – puhas HTML, CSS ja JS.
 
 ```
 index.html                    avaleht (hero, hinnad, tööd, KKK, vorm, kontakt)
-pakett-uheleheline.html       300 € paketi kirjeldus
-pakett-arileht.html           500 € paketi kirjeldus
+pakett-uheleheline.html       300 € paketi kirjeldus + elektritööde näide
+pakett-arileht.html           500 € paketi kirjeldus + arhitektuuribüroo viis lehte kõrvuti
 artiklid.html                 artiklite nimekiri
 artikkel-kodulehe-hind.html   artikkel: kodulehe hind
 artikkel-ei-ilmu-googles.html artikkel: miks leht ei ilmu Google'is
@@ -39,13 +39,21 @@ Kui vahetad e-posti, muuda `index.html` (kontaktiplokk + JSON-LD) ja `api/kontak
 
 ## 2. Lisa pildid
 
-Kausta `pildid/` on vaja kolme faili:
+Kausta `pildid/` käivad tööde ekraanipildid:
 
-| Fail | Mis see on |
-|---|---|
-| `too-fassaad.webp` | terve lehe ekraanipilt esimesest klienditööst |
-| `too-elekter.webp` | terve lehe ekraanipilt teisest klienditööst |
-| ~~`jagapilt.png`~~ | JUBA OLEMAS, genereeritud |
+| Fail | Mis see on | Kus kasutusel |
+|---|---|---|
+| ~~`too-arh-avaleht.webp`~~ | arhitektuuribüroo avaleht | `index.html` hero |
+| ~~`too-arh-portfoolio.webp`~~ | arhitektuuribüroo portfoolio | `index.html` tehtud tööd |
+| ~~`too-arh-teenused.webp`~~ | arhitektuuribüroo teenused | `pakett-arileht.html` |
+| ~~`too-arh-meist.webp`~~ | arhitektuuribüroo meist | `pakett-arileht.html` |
+| ~~`too-arh-kontakt.webp`~~ | arhitektuuribüroo kontakt | `pakett-arileht.html` |
+| ~~`too-fassaad.webp`~~ | fassaaditööde kliendi koduleht | `index.html` tehtud tööd |
+| ~~`too-elekter.webp`~~ | elektritööde kliendi koduleht | `pakett-uheleheline.html` |
+| ~~`jagapilt.png`~~ | genereeritud | Open Graph |
+
+Kõik läbikriipsutatud failid on kaustas juba olemas – uut pilti on vaja ainult
+siis, kui lisad uue klienditöö.
 
 Ekraanipilt: Firefox → parem klõps lehel → *Tee ekraanipilt* → *Salvesta terve leht*.
 Seejärel [squoosh.app](https://squoosh.app) → WebP, kvaliteet ~75 → alla 400 KB.

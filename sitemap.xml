@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://veebikask.ee/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,6 +13,23 @@
       <image:caption>Ühelehelise kodulehe näide fassaaditööde ettevõttele</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://veebikask.ee/pildid/too-arh-avaleht.webp</image:loc>
+      <image:title>Arhitektuuribüroo kodulehe avaleht</image:title>
+      <image:caption>Mitmelehelise kodulehe näide arhitektuuribüroole: piltide põhine avaleht</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://veebikask.ee/pildid/too-arh-portfoolio.webp</image:loc>
+      <image:title>Arhitektuuribüroo portfoolio leht</image:title>
+      <image:caption>Portfoolio leht valminud eramute ja ärihoonete visualisatsioonidega</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/pakett-uheleheline.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
       <image:loc>https://veebikask.ee/pildid/too-elekter.webp</image:loc>
       <image:title>Elektritööde ettevõtte üheleheline koduleht</image:title>
       <image:caption>Ühelehelise kodulehe näide elektritööde ettevõttele</image:caption>
@@ -20,17 +37,35 @@
   </url>
 
   <url>
-    <loc>https://veebikask.ee/pakett-uheleheline.html</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://veebikask.ee/pakett-arileht.html</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://veebikask.ee/pildid/too-arh-avaleht.webp</image:loc>
+      <image:title>Arhitektuuribüroo kodulehe avaleht</image:title>
+      <image:caption>Mitmelehelise kodulehe avaleht arhitektuuribüroole</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://veebikask.ee/pildid/too-arh-portfoolio.webp</image:loc>
+      <image:title>Arhitektuuribüroo portfoolio leht</image:title>
+      <image:caption>Portfoolio leht valminud eramute ja ärihoonete visualisatsioonidega</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://veebikask.ee/pildid/too-arh-teenused.webp</image:loc>
+      <image:title>Arhitektuuribüroo teenuste leht</image:title>
+      <image:caption>Projekteerimisteenused: eskiisprojekt, juurdeehitus, abihoone, ärihoone</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://veebikask.ee/pildid/too-arh-meist.webp</image:loc>
+      <image:title>Arhitektuuribüroo meist-leht</image:title>
+      <image:caption>Arhitekti tutvustus ja tööpõhimõtted</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://veebikask.ee/pildid/too-arh-kontakt.webp</image:loc>
+      <image:title>Arhitektuuribüroo kontaktileht</image:title>
+      <image:caption>Kontaktileht koos hinnapäringu vormiga</image:caption>
+    </image:image>
   </url>
 
   <url>

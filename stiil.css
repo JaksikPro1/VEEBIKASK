@@ -414,3 +414,43 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;max-width:460px}
   flex-basis:100%;margin:6px 0 0;font-family:'JetBrains Mono',monospace;
   font-size:11px;color:var(--ink-2);opacity:.8;
 }
+
+/* ---------- mitmelehelise näite riba: lehed kõrvuti ---------- */
+.lehed-pais{
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-top:26px
+}
+.lehed-pais .kerivihje{
+  margin:0;font-family:'JetBrains Mono',monospace;font-size:11px;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--ink-2)
+}
+.lehed{
+  display:flex;gap:18px;margin-top:14px;
+  overflow-x:auto;padding-bottom:14px;
+  scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;scrollbar-color:var(--joon) transparent;
+}
+.lehed::-webkit-scrollbar{height:6px}
+.lehed::-webkit-scrollbar-thumb{background:var(--joon);border-radius:99px}
+.lehed::-webkit-scrollbar-track{background:transparent}
+.lehed > article{flex:0 0 300px;scroll-snap-align:start}
+.lehed .raam{box-shadow:0 18px 40px -30px rgba(12,27,51,.5)}
+.lehed .kroom{padding:9px 12px;gap:6px}
+.lehed .tapp{width:7px;height:7px}
+.lehed .aadress{font-size:10px;padding:4px 9px;margin-left:6px}
+.lehed .vihje{font-size:9px;padding:5px 10px;bottom:12px}
+.leht-info{margin:13px 2px 0}
+.leht-info .nr{
+  font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--sinine);
+  letter-spacing:.12em;margin:0 0 6px
+}
+.leht-info h3{font-size:17px}
+.leht-info p{margin:7px 0 0;font-size:14px;line-height:1.5;color:var(--ink-2)}
+@media(max-width:560px){
+  .lehed > article{flex:0 0 76vw}
+}
+
+/* puuteseadmes: väikesed raamid kerivad ainult ise, et sõrmega saaks lehte kerida */
+@media(hover:none){
+  .lehed .vaade.kasi{overflow-y:hidden;cursor:default}
+  .lehed .vihje{display:none}
+}

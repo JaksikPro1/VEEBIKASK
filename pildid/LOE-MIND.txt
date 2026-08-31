@@ -1,1 +1,13 @@
-Ekraanipildid siia: too-fassaad.webp, too-elekter.webp, jagapilt.png
+Tööde ekraanipildid. Kõik on olemas.
+
+  too-arh-avaleht.webp     arhitektuuribüroo / avaleht      index.html hero
+  too-arh-portfoolio.webp  arhitektuuribüroo / portfoolio   index.html tehtud tööd
+  too-arh-teenused.webp    arhitektuuribüroo / teenused     pakett-arileht.html
+  too-arh-meist.webp       arhitektuuribüroo / meist        pakett-arileht.html
+  too-arh-kontakt.webp     arhitektuuribüroo / kontakt      pakett-arileht.html
+  too-fassaad.webp         fassaaditööde ettevõte           index.html tehtud tööd
+  too-elekter.webp         elektritööde ettevõte            pakett-uheleheline.html
+
+Uue pildi lisamiseks: Firefox -> parem klõps lehel -> Tee ekraanipilt ->
+Salvesta terve leht. Seejärel squoosh.app -> WebP, laius 1000-1200 px,
+kvaliteet nii, et fail jääks alla ~500 KB.
