@@ -10,7 +10,7 @@ Nii saad kaks varianti võrrelda, selle asemel et algusest ühte lahtrisse jää
 
 ---
 
-# PAKETT 01: üheleheline koduleht (alates 300 EUR)
+# PAKETT 01: üheleheline koduleht (alates 250 EUR)
 
 ```
 Ehita üheleheline koduleht Eesti väikeettevõttele. Puhas HTML, CSS ja

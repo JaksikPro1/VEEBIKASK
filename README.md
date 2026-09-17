@@ -7,7 +7,7 @@ Ei vaja ehitusprotsessi ega raamistikku – puhas HTML, CSS ja JS.
 
 ```
 index.html                    avaleht (hero, hinnad, tööd, KKK, vorm, kontakt)
-pakett-uheleheline.html       300 € paketi kirjeldus + elektritööde näide
+pakett-uheleheline.html       250 € paketi kirjeldus + elektritööde näide
 pakett-arileht.html           500 € paketi kirjeldus + arhitektuuribüroo viis lehte kõrvuti
 artiklid.html                 artiklite nimekiri
 artikkel-kodulehe-hind.html   artikkel: kodulehe hind
