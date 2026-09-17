@@ -30,6 +30,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) + nõusolekurežiim: vaikimisi keelatud, kuni külastaja nõustub -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var vkNous = null; try { vkNous = localStorage.getItem('vk-kupsised'); } catch (e) {}
+  var vkLubatud = vkNous === 'jah' ? 'granted' : 'denied';
+  gtag('consent', 'default', {ad_storage: vkLubatud, ad_user_data: vkLubatud, ad_personalization: vkLubatud, analytics_storage: vkLubatud, wait_for_update: 500});
+  gtag('js', new Date());
+  gtag('config', 'AW-18425073687');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18425073687"></script>
 <link rel="stylesheet" href="stiil.css">
 
 <script type="application/ld+json">

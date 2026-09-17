@@ -27,6 +27,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) + nõusolekurežiim: vaikimisi keelatud, kuni külastaja nõustub -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var vkNous = null; try { vkNous = localStorage.getItem('vk-kupsised'); } catch (e) {}
+  var vkLubatud = vkNous === 'jah' ? 'granted' : 'denied';
+  gtag('consent', 'default', {ad_storage: vkLubatud, ad_user_data: vkLubatud, ad_personalization: vkLubatud, analytics_storage: vkLubatud, wait_for_update: 500});
+  gtag('js', new Date());
+  gtag('config', 'AW-18425073687');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18425073687"></script>
 <link rel="stylesheet" href="stiil.css">
 </head>
 
@@ -57,7 +68,8 @@
 
         <h2>Mis andmeid kogutakse</h2>
         <p>Hinnapäringu vormi kaudu: nimi, ettevõtte nimi, e-posti aadress, telefoninumber ja see, mida sa ise sõnumisse kirjutad. Kõik peale nime, e-posti ja sõnumi on vabatahtlikud.</p>
-        <p>Lehe külastamisel kogutakse anonüümset statistikat: milliseid lehti vaadatakse, millisest riigist ja mis seadmelt. Küpsiseid ei kasutata ja üksikut külastajat ei ole võimalik tuvastada.</p>
+        <p>Lehe külastamisel kogutakse anonüümset statistikat: milliseid lehti vaadatakse, millisest riigist ja mis seadmelt. See statistika küpsiseid ei kasuta ja üksikut külastajat ei ole võimalik tuvastada.</p>
+        <p>Lisaks kasutan Google Adsi, et mõõta, kas reklaam toob päringuid. Google Adsi küpsised salvestatakse ainult siis, kui vajutad lehe allservas nuppu „Nõustun“. Kui keeldud, küpsiseid ei salvestata ja Google saab ainult anonüümse märke lehe külastuse kohta. Oma valikut saad muuta, kui kustutad brauseris selle lehe andmed.</p>
 
         <h2>Mis eesmärgil</h2>
         <p>Ainult selleks, et sinu päringule vastata ja vajadusel pakkumine koostada. Uudiskirja ei saadeta, turundusnimekirja ei lisata.</p>
@@ -67,6 +79,7 @@
         <ul>
           <li><strong>Vercel</strong> majutab lehte ja töötleb vormi päringut</li>
           <li><strong>Resend</strong> saadab vormi sisu e-kirjana</li>
+          <li><strong>Google Ads</strong> mõõdab reklaami tulemusi (küpsised ainult nõusolekul)</li>
         </ul>
         <p>Vastuse saadan tavalise e-postiga, mis on Google'i teenuses.</p>
 

@@ -165,4 +165,38 @@
         nupp.textContent = 'Saada päring';
       });
   });
+
+  /* ---------- küpsiste nõusolek (Google Ads) ---------- */
+  (function () {
+    var vali = null;
+    try { vali = localStorage.getItem('vk-kupsised'); } catch (e) {}
+    if (vali === 'jah' || vali === 'ei') return;
+
+    var riba = document.createElement('div');
+    riba.className = 'kupsised';
+    riba.setAttribute('role', 'region');
+    riba.setAttribute('aria-label', 'Küpsiste nõusolek');
+    riba.innerHTML =
+      '<p>Kasutan Google Adsi küpsiseid, et näha, kas reklaam toob päringuid. ' +
+      '<a href="privaatsus.html">Loe lähemalt</a></p>' +
+      '<div class="kupsised-nupud">' +
+      '<button type="button" class="nupp teine" data-vastus="ei">Keeldu</button>' +
+      '<button type="button" class="nupp" data-vastus="jah">Nõustun</button>' +
+      '</div>';
+    document.body.appendChild(riba);
+
+    riba.addEventListener('click', function (e) {
+      var nupp = e.target.closest('[data-vastus]');
+      if (!nupp) return;
+      var jah = nupp.dataset.vastus === 'jah';
+      try { localStorage.setItem('vk-kupsised', jah ? 'jah' : 'ei'); } catch (err) {}
+      if (jah && typeof window.gtag === 'function') {
+        window.gtag('consent', 'update', {
+          ad_storage: 'granted', ad_user_data: 'granted',
+          ad_personalization: 'granted', analytics_storage: 'granted'
+        });
+      }
+      riba.remove();
+    });
+  })();
 })();
