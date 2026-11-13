@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://veebikask.ee/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -25,7 +25,7 @@
   </url>
 
   <url>
-    <loc>https://veebikask.ee/pakett-uheleheline.html</loc>
+    <loc>https://veebikask.ee/pakett-uheleheline</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -37,7 +37,7 @@
   </url>
 
   <url>
-    <loc>https://veebikask.ee/pakett-arileht.html</loc>
+    <loc>https://veebikask.ee/pakett-arileht</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -69,63 +69,106 @@
   </url>
 
   <url>
-    <loc>https://veebikask.ee/artiklid.html</loc>
-    <lastmod>2026-07-31</lastmod>
+    <loc>https://veebikask.ee/artiklid</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://veebikask.ee/artikkel-kodulehe-hind.html</loc>
-    <lastmod>2026-07-31</lastmod>
+    <loc>https://veebikask.ee/artikkel-kodulehe-hind</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://veebikask.ee/artikkel-ei-ilmu-googles.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://veebikask.ee/artikkel-uks-voi-mitu-lehte.html</loc>
+    <loc>https://veebikask.ee/artikkel-ei-ilmu-googles</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://veebikask.ee/koduleht-ehitusfirmale.html</loc>
+    <loc>https://veebikask.ee/artikkel-uks-voi-mitu-lehte</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/koduleht-ehitusfirmale</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://veebikask.ee/koduleht-elektrikule.html</loc>
+    <loc>https://veebikask.ee/koduleht-elektrikule</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://veebikask.ee/kodulehe-uuendamine.html</loc>
+    <loc>https://veebikask.ee/kodulehe-uuendamine</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://veebikask.ee/kellele-koduleht-tasub.html</loc>
-    <lastmod>2026-08-01</lastmod>
+    <loc>https://veebikask.ee/kellele-koduleht-tasub</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <url>
+    <loc>https://veebikask.ee/koduleht-torumehele</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://veebikask.ee/privaatsus.html</loc>
+    <loc>https://veebikask.ee/koduleht-autoremondile</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/koduleht-puhkemajale</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/koduleht-raamatupidajale</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/koduleht-ilusalongile</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/koduleht-vaiketootjale</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://veebikask.ee/privaatsus</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>

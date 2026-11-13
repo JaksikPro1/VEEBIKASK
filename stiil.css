@@ -225,6 +225,13 @@ img{max-width:100%;display:block}
   font-size:14px;color:var(--ink-2);background:#FBFCFE
 }
 .lisad-loend b{color:var(--ink)}
+.valdkonnad{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.valdkonnad a{
+  border:1px solid var(--joon);border-radius:99px;padding:9px 16px;
+  font-size:14.5px;font-weight:500;color:var(--ink);background:var(--valge);
+  transition:border-color .18s,transform .18s
+}
+.valdkonnad a:hover{text-decoration:none;border-color:var(--sinine);transform:translateY(-1px)}
 
 /* ---------- tööd ---------- */
 .tood{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:28px}

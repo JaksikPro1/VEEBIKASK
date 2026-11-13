@@ -13,10 +13,15 @@ artiklid.html                 artiklite nimekiri
 artikkel-kodulehe-hind.html   artikkel: kodulehe hind
 artikkel-ei-ilmu-googles.html artikkel: miks leht ei ilmu Google'is
 artikkel-uks-voi-mitu-lehte.html  artikkel: üks või mitu lehte
+koduleht-*.html               valdkonnalehed: ehitusfirma, elektrik, torumees, autoremont,
+                              puhkemaja, raamatupidaja, ilusalong, väiketootja
+kellele-koduleht-tasub.html   ülevaade valdkondadest, lingib valdkonnalehtedele
+kodulehe-uuendamine.html      vana lehe uuendamine
+SEO-TEGEVUSED.md              käsitsi SEO sammud: Vercel domeen, Search Console, Google'i profiil, lingid
 stiil.css                     kogu kujundus
 skript.js                     värvivahetus, kerimine, vorm
 api/kontakt.js                Vercel funktsioon, saadab kirja Resendiga
-robots.txt  sitemap.xml       SEO
+robots.txt  sitemap.xml       SEO (aadressid ilma .html-ita, Verceli cleanUrls)
 pildid/                       ekraanipildid tulevad siia
 ```
 

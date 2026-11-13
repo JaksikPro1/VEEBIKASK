@@ -154,7 +154,7 @@
         naita('Päring läks teele. Suunan sind edasi...', true);
         vorm.reset();
         vanaKast.classList.add('peidus');
-        setTimeout(function () { window.location.href = 'aitah.html'; }, 700);
+        setTimeout(function () { window.location.href = '/aitah'; }, 700);
       })
       .catch(function (err) {
         naita('Midagi läks viltu: ' + err.message +
@@ -178,7 +178,7 @@
     riba.setAttribute('aria-label', 'Küpsiste nõusolek');
     riba.innerHTML =
       '<p>Kasutan Google Adsi küpsiseid, et näha, kas reklaam toob päringuid. ' +
-      '<a href="privaatsus.html">Loe lähemalt</a></p>' +
+      '<a href="/privaatsus">Loe lähemalt</a></p>' +
       '<div class="kupsised-nupud">' +
       '<button type="button" class="nupp teine" data-vastus="ei">Keeldu</button>' +
       '<button type="button" class="nupp" data-vastus="jah">Nõustun</button>' +
